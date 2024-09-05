@@ -1,7 +1,11 @@
-import page from "../lib/page/page.mjs";
-import { html, render } from "../lib/lit-html/lit-html.js";
+import page from "@page";
+import { showDashboardView } from "../views/dashboardView.js";
+import { addRender } from "../middlewares/render.js";
+import { showIncomeView } from "../views/incomeView.js";
 
-const temp = () => html` <h1>This is my test page</h1> `;
+const root = document.querySelector('main');
 
-page(render(temp(), document.querySelector("main")));
+page(addRender(root));
+page('/dashboard', showDashboardView);
+page('/incomes', showIncomeView);
 page.start();
