@@ -1,4 +1,4 @@
-import { html, render } from "@lit-html";
+import { html } from "@lit-html";
 
 const incomeTemp = () => html `
 
@@ -92,4 +92,15 @@ const incomeTemp = () => html `
 
 export function showIncomeView(ctx) {
   ctx.render(incomeTemp())
+
+  incomeCalc()
+}
+
+function incomeCalc() {
+  let result = 0;
+  const incomeInputs = document.getElementById('income-amount-input')
+  const incomeResult = document.getElementById('incomes-amount-text')
+  result += incomeInputs.value
+  incomeResult.textContent = result
+
 }

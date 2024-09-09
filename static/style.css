@@ -377,3 +377,71 @@ body {
 /* footer End */
 
 
+/* Outcomes  */
+
+#form-outcomes {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem;
+}
+
+.field-box-date {
+  width: 100%;
+  flex: 1 0 100%;
+  display: block;
+}
+
+.form-box-left {
+  flex: 1 0 50%;
+  border-right: 1px dotted var(--text);
+  padding-left: 1rem;
+
+}
+.form-box-right {
+  flex: 1 0 50%;
+  padding-left: 1rem;
+  border-right: 1px dotted var(--text);
+}
+
+.outcomes-submit-btn {
+  /* width: 100%; */
+  flex: 0 0 10%;
+  
+    font-size: 2rem;
+    color: var(--text);
+    padding: 1rem 3rem;
+    border: none;
+    text-align: end;
+    margin-top: 3rem;
+    cursor: pointer;
+    background-color: var(--breen);
+    border-radius: 3px;
+    margin-left: 1rem;
+}
+
+.fields-box-outcomes {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  border-bottom: 1px solid #000;
+}
+
+.select-outcomes {
+  padding: 0.3rem .8rem;
+  border: none;
+  min-width: 17rem;
+  background-color: var(--blue);
+  color: #fff;
+}
+.select-outcomes::checked {
+  background-color: var(--breen);
+}
+
+.outcome-amount-output {
+  padding: 0.3rem .8rem;
+  border: none;
+  width: 10rem;
+  background-color:#fff;
+  color: var(--text-dark);
+}
+
